@@ -3,7 +3,7 @@
 .page--o { background: var(--color-orange); }
 .page--o::before { content: ""; position: absolute; inset: 0; background: url("assets/pattern-o.svg") 0 0 / 150px; }
 .page--white { background: var(--color-paper); }
-.page--white::before { content: ""; position: absolute; inset: 0; background: url("assets/pattern-rail.svg") 0 0 / 150px; }
+.page--white::before { content: ""; position: absolute; inset: 0; background: url("assets/pattern-w.svg") 0 0 / 170px; }
 .page--white::after { content: ""; position: absolute; inset: var(--header-h) 0 0; background: url("assets/deco-top.svg") right top / 46% auto no-repeat, url("assets/deco-btm.svg") left bottom / 50% auto no-repeat; }
 .page--long.page--white::after { background-size: 180px auto, 180px auto; }
 .strip { width: fit-content; padding: 0.02em 0.32em; border-radius: 0.14em; background: var(--color-paper); box-shadow: 3px 3px 0 var(--color-ink); }
