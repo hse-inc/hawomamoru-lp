@@ -59,6 +59,7 @@
 .stk--tube { right: 7%; top: -0.75em; width: 1.75em; --r: 16deg; rotate: var(--r); }
 .stk--brush2 { right: 21%; top: 0.3em; width: 4em; --r: -8deg; rotate: var(--r); }
 .stk--spark { right: 0; top: -0.9em; width: 1.7em; filter: none; }
+.p2 .card, .p2__say { text-align: center; }
 .p2__end { position: relative; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0.5em 0.6em; }
 .p2__a { font-family: var(--font-head); font-weight: 900; font-size: 1.32em; line-height: 1.45; rotate: -1.2deg; }
 .p2__b { grid-column: 1 / -1; font-family: var(--font-head); font-weight: 900; font-size: 1.5em; line-height: 1.45; rotate: 0.6deg; }
