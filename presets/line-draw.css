@@ -1,0 +1,14 @@
+.pf-line-draw {
+  --pf-dur: 800ms;
+  --pf-delay: 0ms;
+  --pf-ease: ease-out;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.pf-line-draw.is-on {
+  animation: pf-line-draw var(--pf-dur) var(--pf-ease) var(--pf-delay) forwards;
+}
+@keyframes pf-line-draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .pf-line-draw, .pf-line-draw.is-on { stroke-dasharray: none; stroke-dashoffset: 0; animation: none; }
+}

@@ -1,0 +1,22 @@
+.pf-pop {
+  --pf-dur: 500ms;
+  --pf-from: 0.5;
+  --pf-over: 1.12;
+  --pf-delay: 0ms;
+  opacity: 0;
+  transform: scale(var(--pf-from));
+}
+.pf-pop.is-on {
+  opacity: 1;
+  transform: none;
+  animation: pf-pop var(--pf-dur) ease-out var(--pf-delay) both;
+}
+@keyframes pf-pop {
+  0%   { opacity: 0; transform: scale(var(--pf-from)); }
+  55%  { opacity: 1; transform: scale(var(--pf-over)); }
+  78%  { transform: scale(0.97); }
+  100% { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-pop, .pf-pop.is-on { opacity: 1; transform: none; animation: none; }
+}

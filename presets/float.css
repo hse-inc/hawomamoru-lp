@@ -1,0 +1,16 @@
+.pf-float {
+  --pf-dur: 3.6s;
+  --pf-amp: 6px;
+  --pf-tilt: 1.5deg;
+  --pf-delay: 0ms;
+}
+.pf-float.is-on {
+  animation: pf-float var(--pf-dur) ease-in-out var(--pf-delay) infinite alternate;
+}
+@keyframes pf-float {
+  from { translate: 0 0; rotate: calc(var(--pf-tilt) * -1); }
+  to   { translate: 0 calc(var(--pf-amp) * -1); rotate: var(--pf-tilt); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-float, .pf-float.is-on { animation: none; translate: none; rotate: none; }
+}

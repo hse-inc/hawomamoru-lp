@@ -1,0 +1,67 @@
+:root {
+  
+  --color-ink: #3a2a1f;          
+  --color-main: #3a2a1f;         
+  --color-main-2: #1b7a6e;       
+  --color-accent: #1b7a6e;       
+  --color-accent-2: #16695f;     
+  --color-base: #ffffff;         
+  --color-pale: #fff4e6;         
+  --color-line: #e6d8c6;         
+  --color-on-dark: #ffffff;      
+  --color-on-dark-line: rgb(255 255 255 / 0.6);
+  --color-error: #c8312b;        
+  --color-shadow: rgb(58 42 31 / 0.18);
+  --color-orange: #fb8500;       
+  --color-emerald: #2a9d8f;      
+  --color-orange-text: #b85206;  
+  --color-paper: #ffffff;
+  --color-hand: #7fcfc4;         
+  --color-flow: rgb(255 255 255 / 0.92);
+  --shadow-sticker: drop-shadow(0 3px 5px rgb(58 42 31 / 0.22));
+
+  
+  --bg-dark: linear-gradient(160deg, var(--color-main) 0%, var(--color-ink) 100%);
+  --bg-accent: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-2) 100%);
+
+  
+  --font-body: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  --font-head: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+  --font-en: "Geologica", "Noto Sans JP", sans-serif;
+  --font-script: "Lobster", "Geologica", sans-serif;
+  
+  --fs-min: 13px;
+  
+  --fs-base: clamp(var(--fs-min), min(2.26dvh, 3.85vw), 15px);
+  --fs-ui: max(var(--fs-min), 13px);   
+  --fs-input: 16px;                     
+  --fw-body: 500;                
+  --ls-body: 0.02em;
+  --lh-body: 1.8;
+  --lh-head: 1.45;
+
+  
+  --col: 480px;                  
+  --header-h: 56px;
+  --gutter: 22px;                
+  --sp-1: 0.45em;                
+  --sp-p: 0.6em;                
+  --sp-g: 1.3em;                 
+  --pad-y: 1.2em;                
+  --next-h: 0px;                 
+  --radius-pill: 999px;
+  --radius-s: 6px;
+  --shadow-soft: 0 0 10px 0 var(--color-shadow);
+  --shadow-column: 0 0 24px 0 var(--color-shadow);
+
+  
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --rise: 32px;                  
+  --dur-in: 600ms;
+  --dur-hover: 300ms;
+}
+
+@media (max-height: 600px) { :root { --pad-y: 0.7em; } }
+
+@media (min-height: 860px) { :root { --fs-base: 17px; --sp-g: 2.1em; --sp-p: 1em; } }
+@media (min-height: 1000px) { :root { --sp-g: 4.2em; --sp-p: 1.3em; } }
