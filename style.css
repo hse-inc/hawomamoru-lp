@@ -67,7 +67,7 @@
 .underl { position: relative; isolation: isolate; display: inline-block; padding-bottom: 0.18em; white-space: nowrap; }
 .hand--under { inset: auto 0 0 0; height: 0.4em; }
 .ac { color: var(--color-main-2); }
-.hd .ringed { padding: 0.04em 0.34em 0.04em 0.3em; margin: -0.04em -0.1em -0.04em -0.1em; }
+.hd .ringed { display: inline; padding: 0.04em 0.34em 0.04em 0.3em; margin: -0.04em -0.1em -0.04em -0.1em; }
 .stk--tooth2 { right: -0.5em; bottom: -0.8em; width: 2.2em; }
 .p2__front { display: block; width: 6.4em; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: 88% 50%; border: 5px solid var(--color-paper); border-radius: 4px; rotate: 4deg; filter: var(--shadow-sticker); }
 
