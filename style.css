@@ -53,7 +53,7 @@
 .p1__photo { display: block; width: 100%; height: clamp(120px, 26dvh, 360px); object-fit: cover; object-position: 60% 40%; border-radius: 1em; }
 .stk--worry { right: var(--gutter); top: 44%; width: 24%; }
 
-.p2__say { position: relative; padding: 0.8em 1em; border: 2.5px solid var(--color-ink); border-radius: 1.3em; background: var(--color-accent); color: var(--color-on-dark); font-family: var(--font-head); font-weight: 900; font-size: 1.6em; line-height: 1.4; box-shadow: 4px 5px 0 var(--color-ink); rotate: -1.4deg; }
+.p2__say { position: relative; padding: 0.7em 0.7em; border: 2.5px solid var(--color-ink); border-radius: 1.3em; background: var(--color-accent); color: var(--color-on-dark); font-family: var(--font-head); font-weight: 900; font-size: 1.6em; line-height: 1.4; box-shadow: 4px 5px 0 var(--color-ink); rotate: -1.4deg; }
 .p2__say::after { content: ""; position: absolute; left: 12%; bottom: -0.72em; width: 1.05em; height: 0.8em; background: var(--color-accent); clip-path: polygon(0 0, 100% 0, 24% 100%); }
 .p2 .head { position: relative; }
 .stk--tube { right: 7%; top: -0.75em; width: 1.75em; --r: 16deg; rotate: var(--r); }
@@ -71,6 +71,13 @@
 .hd .ringed { display: inline; padding: 0.04em 0.34em 0.04em 0.3em; margin: -0.04em -0.1em -0.04em -0.1em; }
 .stk--tooth2 { right: -0.5em; bottom: -0.8em; width: 2.2em; }
 .p2__front { display: block; width: 6.4em; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: 88% 50%; border: 5px solid var(--color-paper); border-radius: 4px; rotate: 4deg; filter: var(--shadow-sticker); }
+
+@media (max-height: 600px) {
+  .p2 .card .body { font-size: 1.04em; }
+  .p2__say { font-size: 1.3em; }
+  .p2__a { font-size: 1.15em; }
+  .p2__b { font-size: 1.25em; }
+}
 
 .big-en { position: relative; display: grid; justify-items: center; font-family: var(--font-en); font-weight: 700; line-height: 1; }
 .big-en__a { font-size: 3.6em; letter-spacing: 0.04em; }
