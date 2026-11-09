@@ -15,6 +15,7 @@
 .sup { font-size: max(var(--fs-min), 0.85em); }
 .close { font-size: 1.05em; }
 .head { display: grid; gap: var(--sp-1); }
+.head--w, .tile--o { color: var(--color-paper); text-shadow: var(--edge-ink); }
 .txt { display: grid; gap: var(--sp-p); }
 .sec-en { display: flex; align-items: end; gap: 0.7em; padding-bottom: 0.45em; border-bottom: 3px double currentColor; }
 .sec-en__big { font-family: var(--font-script); font-size: 2.3em; line-height: 1.1; letter-spacing: 0.04em; }
@@ -102,6 +103,10 @@
 .stk--v1 { left: 4%; top: 6%; width: 1.7em; --r: -8deg; rotate: var(--r); }
 .stk--v2 { left: 2%; top: 40%; width: 2.3em; --r: 9deg; rotate: var(--r); }
 .stk--v3 { left: 6%; bottom: 3%; width: 1.7em; --r: 14deg; rotate: var(--r); }
+@media (min-width: 960px) {
+  .p4__grid { flex: 1; max-height: 760px; }
+  .p4__main { align-content: space-between; }
+}
 .chips { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4em; font-size: max(var(--fs-min), 0.93em); font-weight: 700; }
 .chips li { display: grid; place-content: center; padding: 0.3em 0.5em; border: 2px solid var(--color-ink); border-radius: 0.7em; background: var(--color-paper); line-height: 1.4; text-align: center; box-shadow: 2px 3px 0 var(--color-ink); rotate: -1deg; }
 .chips li:nth-child(even) { background: var(--color-mint); rotate: 1deg; }
@@ -113,7 +118,7 @@
 .num__b { font-family: var(--font-en); font-weight: 700; font-size: 3em; letter-spacing: -0.01em; }
 .num__s { font-size: 1.2em; }
 .num__m { font-family: var(--font-en); font-weight: 700; font-size: 1.3em; }
-.lst { display: grid; gap: 0.3em; padding: 0.85em 1em; border-radius: 1em; background: var(--color-pale); font-weight: 700; font-size: max(var(--fs-min), 0.95em); line-height: 1.5; }
+.lst { display: grid; gap: 0.62em; padding: 0.85em 1em; border-radius: 1em; background: var(--color-pale); font-weight: 700; font-size: max(var(--fs-min), 0.95em); line-height: 1.5; }
 .lst li { position: relative; padding-left: 1.3em; }
 .lst li::before { content: ""; position: absolute; left: 0; top: 0.28em; width: 0.9em; height: 1.17em; background: url("assets/ic-tooth.svg") center / contain no-repeat; }
 
