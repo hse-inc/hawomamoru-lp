@@ -96,6 +96,7 @@
 
 .p4__grid { display: grid; grid-template-columns: 3.1em 1fr; gap: 0.9em; }
 .p4__main { display: grid; gap: var(--sp-g); }
+.p4 .hd { font-size: 1.3em; }
 .vflow { position: relative; overflow: hidden; border-right: 2px dotted var(--color-ink); }
 .vflow__txt { position: absolute; inset: 0 0.3em 0 0; overflow: hidden; }
 .vflow__txt::before { content: "DENTAL HYGIENIST DENTAL HYGIENIST DENTAL HYGIENIST DENTAL HYGIENIST"; position: absolute; left: 0.1em; top: 0; writing-mode: vertical-rl; white-space: nowrap; font-family: var(--font-en); font-weight: 700; font-size: 2.15em; line-height: 1; color: var(--color-flow); animation: vflow 30s linear infinite; }
